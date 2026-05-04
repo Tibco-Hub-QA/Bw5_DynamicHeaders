@@ -1,0 +1,8 @@
+site_name: "my-bw5ce-app-we234"
+site_description: BW5CE App - my-bw5ce-app-we234
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
