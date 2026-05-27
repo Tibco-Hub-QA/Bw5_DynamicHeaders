@@ -1,0 +1,45 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "my-bw5-app-8667"
+  description: BW5CE App - my-bw5-app-8667
+  annotations:
+    github.com/project-slug: Tibco-Hub-QA/Bw5_DynamicHeaders
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: Tibco-Hub-QA/Bw5_DynamicHeaders
+  tibco.developer.hub/topology:
+    theme:
+      colors:
+        background: '#1a237e'
+        iconColor: '#1a237e'
+    entityIcon:
+      icon: ""
+      iconTooltip: "BW5CE App"
+    statusIcons:
+      - icon: 'VerifiedUser'
+        iconColor: 'white'
+        iconTooltip: 'Scan Passed...'
+      - icon: 'CloudDone'
+        iconColor: 'white'
+        iconTooltip: 'Deployed successfully...'
+  tibcoPlatformApps:
+    - appType: bw5ce
+      appName: my-bw5-app-8667
+      dataPlaneName: DP-dev
+      dpId: d8ampvu84ajc73crcpvg
+      appId: d8b62lj46rfs73aoe0r0
+  links:
+    - url: "https://www.tibco.com/"
+      title: TIBCO Platform
+      icon: dashboard
+    - url: "vscode://vscode.git/clone?url=https://github.com/Tibco-Hub-QA/Bw5_DynamicHeaders"
+      title: Open in VSCode
+      icon: scaffolder
+  tags:
+    - platform
+    - bw5ce
+
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/tibco-templates
